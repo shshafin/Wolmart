@@ -1,0 +1,35 @@
+@import '../../variables/variable';
+@import '../../mixin/mixins';
+
+#menu{
+    .menu_shop {
+        >ul {
+            >li {
+                >a{
+                    transition: all linear .3s;
+                    &:hover{
+                        color:#fff;
+                        background: $bg_c2;
+    
+                    }
+                }
+    
+    
+                .menu_left_drop {
+                    display: none;
+                    transition: all linear .3s;
+                }
+                &:hover{
+                    .menu_left_drop {
+                        display: block;
+                        
+        
+                    }
+                }
+               
+                   
+            }            
+            
+        }
+    }
+}

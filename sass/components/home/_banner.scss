@@ -1,0 +1,92 @@
+#banner {
+    .banner_iten {
+        padding: 50px 0;
+
+        .banner_img {
+            img {
+                display: block;
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        .banner_text {
+            h5 {
+                @include fs($cl2, 30px, 500, $ff1);
+
+                span {
+                    margin: 0 5px;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: 4px;
+                        width: 100%;
+                        height: 3px;
+                        background: $cl3;
+
+                    }
+                }
+            }
+            h3{
+                @include fs($cl1, 40px, 700, $ff1);
+            }
+            p{
+                @include fs($cl2, 25px, 400, $ff1);
+                span{
+                    @include fs($cl3, 25px, 500, $ff1);
+                }
+            }
+            a{
+                padding: 15px 30px;
+                border: 2px solid #000;
+                margin-top: 25px;
+                @include fs($cl1, 20px, 400, $ff1);
+                &:hover{
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        li{
+            button {
+                font-size: 0;
+                width: 10px;
+                height: 10px;
+                border: 1px solid #fff;
+                background: transparent;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+            &.slick-active{
+                button {
+                    width: 20px;
+                    height: 10px;
+                    border-radius: 40%;                 
+                    background: $bg_c2;
+                    border-color: $bg_c2;
+                                    
+                }
+
+            } 
+        }
+            
+        
+    }
+       
+     
+    
+}
+
+
+

@@ -1,0 +1,272 @@
+@import '../../mixin/mixins';
+@import '../../variables/variable';
+
+#logo {
+
+    padding: 30px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    .main_logo {
+        a {
+            img {
+                width: 180px;
+            }
+        }
+    }
+
+    .logo_search {
+        border: 1px solid $bg_c2;
+        height: 47px;
+        padding-left: 20px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            @include after1 (165px, 50%, 1px, 30px, rgba(0, 0, 0, 0.2));
+            transform: translateY(-50%);
+        }
+     
+
+        select {
+            width: 145px;
+            height: 45px;
+            background: transparent;
+            border: 0;
+            position: relative;
+            cursor: pointer;
+
+
+        }
+
+        input {
+            width: 364px;
+            height: 45px;
+            border: 0;
+        }
+
+        button {
+            background: transparent;
+            border: 0;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            margin-right: 10px;
+
+            &:hover {
+                color: $bg_c2;
+            }
+        }
+    }
+
+    .logo_last {
+        margin: 10px 20px;
+
+        .call {
+            padding-left: 40px;
+            position: relative;
+
+            a {
+                margin-right: 20px;
+                transition: all linear .3s;
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 30px;
+                    color: $cl1;
+                }
+
+                p {
+                    @include fs($cl1, 16px, 400, $ff1);
+                    transition: all linear .3s;
+
+                    &:hover {
+                        color: $bg_c2 !important;
+                    }
+                }
+
+                h4 {
+                    @include fs($cl1, 16px, 700, $ff1);
+                }
+
+                &:hover {
+
+                    i,
+                    h4 {
+                        color: $bg_c2;
+                    }
+                }
+
+            }
+
+        }
+
+        .Wishlist {
+            a {
+                margin-right: 20px;
+                transition: all linear .3s;
+
+
+                i {
+                    color: $cl1;
+                }
+
+                p {
+                    @include fs($cl1, 16px, 400, $ff1);
+                }
+
+                &:hover {
+
+                    p,
+                    i {
+                        color: $bg_c2;
+
+                    }
+
+
+                }
+
+            }
+        }
+
+        .cart {
+            a {
+                transition: all linear .3s;
+                i {
+                    color: $cl1;
+                }
+
+                p {
+                    @include fs($cl1, 16px, 400, $ff1);
+                }
+
+                &:hover {
+
+                    p,
+                    i {
+                        color: $bg_c2;
+                    }
+                }
+
+            }
+
+            .cart_body {
+                h5 {
+                    @include fs($cl1, 16px, 700, $ff1);
+                    text-transform: uppercase;
+                    width: 100%;
+                    text-align: start;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        @include after2 (0, -20px, 100%, 1px, rgba(0, 0, 0, 0.2));
+                    }
+                }
+
+                .offcanvas-body {
+                    ul {
+                        position: relative;
+
+                        li {
+                            h4 {
+                                @include fs($cl1, 16px, 400, $ff1);
+                                padding-right: 120px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: $bg_c2;
+
+                                }
+                            }
+
+                            p {
+                                @include fs($cl1, 16px, 400, $ff1);
+
+                                .mony {
+                                    @include fs($bg_c2, 16px, 500, $ff1);
+
+                                }
+                            }
+
+                            img {
+                                width: 100px;
+                                height: 100px;
+                                margin-bottom: 30px;
+                                cursor: pointer;
+
+                            }
+
+                            i {
+                                width: 30px;
+                                height: 30px;
+                                position: absolute;
+                                top: -15px;
+                                right: 0;
+                                background: #fff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                transition: all linear .3s;
+
+                                &:hover {
+                                    color: $bg_c2;
+                                }
+                            }
+                        }
+                    }
+
+                    .border_up {
+                        margin-top: 10px;
+                    }
+
+                    .border_dwon {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                        margin-bottom: 30px;
+                    }
+
+                    .cart_total {
+                        h4 {
+                            @include fs($cl1, 16px, 500, $ff1);
+                        }
+
+                        .price {
+                            @include fs($cl1, 18px, 500, $ff1);
+                        }
+                    }
+                    .cart_action{
+                        a{
+                            padding: 10px 15px;
+                            border: 1px solid $cl1;
+                            margin-top: 30px;
+                            text-transform: uppercase;
+                            margin-right: 10px;
+                            @include fs($cl1, 16px, 500, $ff1);
+                            transition: all linear .3s;
+
+                            &:hover{
+                                color: #fff;
+                                background: $bg_c;
+                                border-color:$bg_c;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+
+}

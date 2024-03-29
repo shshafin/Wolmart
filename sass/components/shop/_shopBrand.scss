@@ -1,0 +1,18 @@
+@import '../../variables/variable';
+@import '../../mixin/mixins';
+
+#shop_brand {
+    padding: 30px 0;
+    .shop_d_brand {
+        ul {
+            li {
+                width: 14.28%;
+
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}

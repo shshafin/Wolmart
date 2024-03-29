@@ -1,0 +1,138 @@
+@import '../../variables/variable';
+@import '../../mixin/mixins';
+/*===============================================
+                Support/offer part start
+================================================*/
+#support_offer{
+    .support {
+        .main_support {
+            padding: 20px 0;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+    
+            .support_box {
+    
+    
+                .support_icon {
+                    i {
+                        font-size: 40px;
+                        margin-right: 20px;
+                        color: $bg_c2;
+                    }
+    
+                }
+    
+                .support_text {
+                    h4 {
+                        @include fs($cl1, 16px, 500, $ff1);
+                    }
+    
+                    p {
+                        @include fs($cl1, 14px, 400, $ff1);
+                    }
+                }
+            }
+    
+        }
+    
+        .main_offer{
+            margin: 60px 0;
+    
+            .offer {    
+                margin-right: 25px;
+                
+        
+                .offer_img {
+                    height: 250px;
+                    position: relative;
+                    
+        
+                    .offer_text {
+                        position: absolute;
+                        left: 40px;
+                        top: 40px;
+                        text-align: start;
+                        h5 {
+                            @include fs($cl1, 18px, 400, $ff1);
+                            span{
+                                @include fs($cl3, 18px, 700, $ff1);
+                                text-transform: uppercase;
+                            }
+                        }
+        
+                        h3 {
+                            margin-top: 6px;
+                            @include fs($cl1, 30px, 700, $ff1);
+                            text-transform: uppercase;
+                            span{
+                                @include fs($cl1, 30px, 400, $ff1);
+                                text-transform: capitalize;
+                                display: block;                            
+                            }
+                        }
+        
+                        p {
+                            margin-top: 20px;
+                            @include fs($cl1, 16px, 400, $ff1);
+                            span{
+                                @include fs($cl3, 16px, 700, $ff1);
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .offer2 {
+                margin-right: 0;
+                
+        
+                .offer_img {
+                    height: 250px;
+                    position: relative;
+                    
+        
+                    .offer_text {
+                        position: absolute;
+                        left: 40px;
+                        top: 40px;
+                        h5 {
+                            @include fs(#fff, 18px, 400, $ff1);
+                        }
+        
+                        h3 {
+                            margin-top: 6px;
+                            @include fs(#fff, 30px, 700, $ff1);
+                            text-transform: uppercase;
+                            span{
+                                @include fs(#fff, 30px, 400, $ff1);
+                                text-transform: capitalize;
+                                display: block;                            
+                            }
+                        }
+        
+                        p {
+                            margin-top: 20px;
+                            @include fs(#fff, 16px, 400, $ff1);
+                            span{
+                                @include fs($cl3, 16px, 700, $ff1);
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        .hot_offer{
+            .zoom_part{
+                padding: 60px 0;
+                border: 3px solid green;
+            }
+        }   
+    
+    }
+}
+/*===============================================
+                Support/offer part End
+================================================*/
+

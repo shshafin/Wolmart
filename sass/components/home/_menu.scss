@@ -1,0 +1,640 @@
+@import '../../variables/variable';
+@import '../../mixin/mixins';
+
+#menu {
+    .menu_left {
+        >ul {
+            >li {
+                position: relative;
+
+                >a {
+                    padding: 20px 20px;
+                    background: #ddd;
+                    display: block;
+                    @include fs($cl1, 16px, 400, $ff1);
+                    position: relative;
+
+                    i {
+                        padding: 0 5px;
+                    }
+
+                    >i:last-child {
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .menu_left_drop {
+                    background: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    z-index: 999;
+
+
+                    >ul {
+                        >li {
+
+                            position: relative;
+
+                            >a {
+                                padding: 15px 0;
+                                display: block;
+                                @include fs($cl1, 16px, 400, $ff1);
+                                margin: 0 20px;
+                                position: relative;
+                                transition: all linear .3s;
+
+                                >i:last-child {
+                                    position: absolute;
+                                    right: -10px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    transition: all linear .3s;
+                                }
+
+                                &::after {
+                                    position: absolute;
+                                    content: '';
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 2px;
+                                    background: rgba(0, 0, 0, 0.2);
+                                }
+
+                                >i {
+                                    margin-right: 10px;
+                                }
+
+                                &:hover {
+                                    >i:last-child {
+                                        position: absolute;
+                                        right: -20px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+                                }
+
+                            }
+
+                            .menu_mega_left {
+                                width: 690px;
+                                background: #fff;
+                                position: absolute;
+                                left: 100%;
+                                top: 0;
+                                display: none;
+                                transition: all linear.3s;
+
+                                .women {
+
+                                    h4 {
+                                        padding: 15px 0;
+                                        @include fs($cl1, 18px, 500, $ff1);
+                                        text-transform: uppercase;
+                                        position: relative;
+
+                                        &::after {
+                                            position: absolute;
+                                            content: '';
+                                            left: 0;
+                                            bottom: 0;
+                                            width: 100%;
+                                            height: 1px;
+                                            background: rgba(0, 0, 0, 0.2);
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        a {
+                                            padding-top: 10px;
+                                            @include fs($cl2, 14px, 400, $ff1);
+
+                                            &:hover {
+                                                color: $bg_c2;
+                                            }
+
+                                        }
+
+                                    }
+
+
+                                }
+
+                                .mega_left_img {
+                                    position: relative;
+
+                                    .mega_left_item {
+                                        height: 300px;
+                                        width: 100%;
+                                    }
+
+                                    .mega_overlay {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgba(0, 0, 0, 0.6);
+
+
+
+                                        .mega_left_text {
+                                            margin: 35px 30px;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            line-height: 26px;
+
+
+                                            h3 {
+                                                @include fs(#fff, 20px, 700, $ff1);
+                                            }
+
+                                            h5 {
+                                                @include fs(#fff, 18px, 400, $ff1);
+
+                                                span {
+                                                    color: $cl3;
+                                                }
+                                            }
+
+                                            a {
+                                                @include fs(#fff, 14px, 400, $ff1);
+
+                                                i {
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                            }
+
+                            .menu_mega_left_home {
+                                width: 690px;
+                                background: #fff;
+                                position: absolute;
+                                left: 100%;
+                                top: 0;
+                                display: none;
+                                transition: all linear.3s;
+
+                                .women {
+
+                                    h4 {
+                                        padding: 15px 0;
+                                        @include fs($cl1, 18px, 500, $ff1);
+                                        text-transform: uppercase;
+                                        position: relative;
+
+                                        &::after {
+                                            position: absolute;
+                                            content: '';
+                                            left: 0;
+                                            bottom: 0;
+                                            width: 100%;
+                                            height: 1px;
+                                            background: rgba(0, 0, 0, 0.2);
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        a {
+                                            padding-top: 10px;
+                                            @include fs($cl2, 14px, 400, $ff1);
+
+                                            &:hover {
+                                                color: $bg_c2;
+                                            }
+
+                                        }
+
+                                    }
+
+
+                                }
+
+                                .mega_home_img {
+                                    position: relative;
+
+                                    .mega_img_item {
+                                        height: 537px;
+                                        width: 100%;
+                                    }
+
+                                    .overlay_home {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: rgba(0, 0, 0, 0.6);
+
+                                        .mega_home_text {
+                                            margin: 0 40px 30px 30px;
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: 0;
+                                            line-height: 26px;
+
+
+                                            p {
+                                                @include fs(#fff, 14px, 400, $ff1);
+
+                                            }
+
+                                            h3 {
+                                                @include fs(#fff, 20px, 700, $ff1);
+                                            }
+
+                                            h5 {
+                                                @include fs(#fff, 18px, 400, $ff1);
+
+                                                span {
+                                                    color: $cl3;
+                                                }
+                                            }
+
+                                            a {
+                                                @include fs(#fff, 14px, 400, $ff1);
+
+                                                i {
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+
+                                        .mega_electo_text {
+                                            margin: 35px 30px;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            line-height: 26px;
+
+
+                                            p {
+                                                @include fs(#fff, 14px, 400, $ff1);
+
+                                            }
+
+                                            h3 {
+                                                @include fs(#fff, 20px, 700, $ff1);
+                                            }
+
+                                            h5 {
+                                                @include fs(#fff, 18px, 400, $ff1);
+
+                                                span {
+                                                    color: $cl3;
+                                                }
+                                            }
+
+                                            a {
+                                                @include fs(#fff, 14px, 400, $ff1);
+
+                                                i {
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                            }
+
+                            .menu_mega_left_furni {
+                                width: 900px;
+                                background: #fff;
+                                position: absolute;
+                                left: 100%;
+                                top: 0;
+                                display: none;
+                                transition: all linear.3s;
+
+                                .women {
+
+                                    h4 {
+                                        padding: 15px 0;
+                                        @include fs($cl1, 18px, 500, $ff1);
+                                        text-transform: uppercase;
+                                        position: relative;
+
+                                        &::after {
+                                            position: absolute;
+                                            content: '';
+                                            left: 0;
+                                            bottom: 0;
+                                            width: 100%;
+                                            height: 1px;
+                                            background: rgba(0, 0, 0, 0.2);
+                                        }
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        a {
+                                            padding-top: 10px;
+                                            @include fs($cl2, 14px, 400, $ff1);
+
+                                            &:hover {
+                                                color: $bg_c2;
+                                            }
+
+                                        }
+
+                                    }
+
+
+                                }
+
+                            }
+
+                            &:hover {
+
+                                .menu_mega_left,
+                                .menu_mega_left_furni,
+                                .menu_mega_left_home {
+                                    display: block;
+                                }
+
+                                a {
+                                    color: $bg_c2;
+                                }
+                            }
+                        }
+                    }
+
+                    .furniture_img {
+
+                        margin-top: 20px;
+                        position: relative;
+
+                        .furniture_item {
+                            height: 150px
+                        }
+
+                        .overlay {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.1);
+                            z-index: 1;
+
+                            .fur_item_text {
+                                text-align: right;
+                                margin-right: 20px;
+
+                                p {
+                                    @include fs($cl2, 14px, 400, $ff1);
+
+                                    span {
+                                        @include fs($cl1, 16px, 500, $ff1);
+
+                                    }
+                                }
+
+                                h3 {
+                                    @include fs($cl1, 22px, 700, $ff1);
+                                }
+
+
+
+                            }
+
+                            .fur_item_text2 {
+                                margin-left: 20px;
+
+                                p {
+                                    @include fs(#fff, 14px, 400, $ff1);
+
+                                    span {
+                                        @include fs(#fff, 16px, 500, $ff1);
+
+                                    }
+                                }
+
+                                h3 {
+                                    @include fs(#fff, 22px, 700, $ff1);
+                                }
+
+                            }
+
+                        }
+
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .main_menu {
+        padding: 20px 0;
+
+        >ul {
+
+            >li {
+                position: relative;
+                transition: all linear .3s;
+
+
+                >a {
+                    margin: 0 20px;
+                    @include fs($cl1, 16px, 500, $ff1);
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 3px;
+                        background: $bg_c2;
+                        transform-origin: 100% 0;
+                        transition: transform .3s;
+                        transform: scale(0);
+
+                    }
+
+                    &:hover {
+                        color: $bg_c2;
+
+                        &:after {
+                            transform: scale(1);
+                            transform-origin: 0 0;
+
+                        }
+
+                        i {
+                            color: $bg_c2;
+                        }
+
+                    }
+
+                    i {
+                        color: $cl1;
+                        position: absolute;
+                        right: -20px;
+                        top: 50%;
+                        transform: translateY(-50%)
+                    }
+
+
+                }
+
+                .mid_mega_menu {
+                    width: 800px;
+                    height: 300px;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background: #fff;
+                    display: none;
+                    z-index: 999;
+
+                    h4 {
+                        margin: 20px 15px;
+                        @include fs($cl1, 16px, 500, $ff1);
+                    }
+
+                    ul {
+                        margin-left: 15px;
+
+                        li {
+                            a {
+                                display: block;
+                                @include fs($cl1, 14px, 400, $ff1);
+
+                            }
+                        }
+                    }
+
+
+                }
+
+                &:hover {
+                    .mid_mega_menu {
+                        display: block;
+                    }
+
+                    .vendor_sub_menu {
+                        ul {
+                            visibility: visible;
+                            opacity: 1;
+
+                        }
+                    }
+                }
+
+                .vendor_sub_menu {
+                    ul {
+                        position: absolute;
+                        left: 10px;
+                        width: 200px;
+                        background: #fff;
+                        z-index: 999;
+                        visibility: hidden;
+                        opacity: 0;
+
+                        li {
+                            width: 100%;
+                            position: relative;
+
+                            a {
+                                @include fs($cl1, 14px, 400, $ff1);
+                                margin: 5px 0;
+
+
+                                i {
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    transition: linear .3s;
+
+                                }
+
+                            }
+
+                            a {
+                                &:hover {
+                                    color: $bg_c2;
+
+                                    i {
+                                        right: 10px;
+                                    }
+
+                                }
+                            }
+                            &:hover {
+                                ul {
+
+                                    li {
+                                        display: block;
+
+                                    }
+                                }
+                            }
+
+                            >ul {
+                                left: 100%;
+                                top: 0;
+
+                                li {
+                                    display: none;
+
+                                    a {
+                                        color: #333;
+                                    }
+                                }
+                            }
+
+
+
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+
+    .menu_last {
+        ul {
+            li {
+                a {
+                    padding: 20px 0;
+                    @include fs($cl1, 16px, 500, $ff1);
+                    transition: all linear .3s;
+
+                    &:hover {
+                        color: $bg_c2;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

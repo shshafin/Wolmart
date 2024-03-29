@@ -1,0 +1,137 @@
+@import '../../variables/variable';
+@import '../../mixin/mixins';
+
+.venndor_banner {
+    border-radius: 5px;
+    margin: 20px 0;
+
+    .vendor_ban_text {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rgba(37, 38, 42, 0.9);
+        width: 40%;
+        padding: 50px;
+
+        img {
+            border-radius: 50%;
+        }
+
+        h4 {
+            @include fs(#fff, 18px, 600, $ff1);
+            margin: 25px 0;
+        }
+
+        p {
+            @include fs(#fff, 14px, 400, $ff1);
+            margin: 10px 0;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        .vendor_ban_call {
+            
+            a {
+                @include fs(#fff, 14px, 400, $ff1);
+                transition: linear .3s;
+
+
+                &:hover {
+                    color: $cl3;
+                    i{
+                        color: $cl3;
+                    }
+                }
+
+                i{
+                    padding-right: 5px;
+                    color: #fff;
+                }
+
+                
+
+
+            }
+
+        }
+
+
+        .vendor_ban_icon {
+            ul {
+                margin-top: 30px;
+
+                li {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid#fff;
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    transition: linear .3s;
+
+                    a {
+                        i {
+                            color: #fff;
+                        }
+                    }
+                    &:hover{
+                        background: $bg_c2;
+                        border-color: $bg_c2;
+                    }
+
+                }
+                .l2{
+                    &:hover{
+                        background: #dd4b39;
+                        border-color: #dd4b39;
+                    }
+                }
+                .l3{
+                    &:hover{
+                        background: #00adef;
+                        border-color: #00adef;
+                    }
+                }
+                .l4{
+                    &:hover{
+                        background: #f96a02;
+                        border-color: #f96a02;
+                    }
+                }
+                .l5{
+                    &:hover{
+                        background: red;
+                        border-color: red;
+                    }
+                }
+                .l6{
+                    &:hover{
+                        background: #dd4b39;
+                        border-color: #dd4b39;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.product_box {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+    a {
+        @include fs($cl1, 16px, 600, $ff1);
+        transition: all linear .3s;
+
+        &:hover {
+            color: $bg_c2;
+        }
+    }
+}

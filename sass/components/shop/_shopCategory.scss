@@ -1,0 +1,63 @@
+@import '../../variables/variable';
+@import '../../mixin/mixins';
+
+#shop_category {
+    padding: 10px 0 60px;
+    .category_media {position: relative;
+        ul {
+            li {
+                width: 10.98%;
+                    margin-right: 20px;
+                    >a{   
+                        overflow: hidden;
+                        border-radius: 50%;
+                        display: block; 
+                                             
+                        img {    
+                            transition: linear .3s; 
+                                                 
+                        }
+                    }   
+                
+                .media_text{
+                    h5{
+                        margin-top: 10px;
+                        a{
+                            @include fs($cl1, 16px, 600, $ff1);
+                            transition: linear .3s;
+                        }
+                        &:hover{
+                            a{
+                                color: $bg_c2;
+
+                            }
+                            
+                        }
+                    }
+                } 
+                &:hover{
+                    a{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                &:last-child{
+                    margin-right: 0;
+                }  
+            }
+            
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -25px;
+            width: 100%;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
+ 
+    
+}
